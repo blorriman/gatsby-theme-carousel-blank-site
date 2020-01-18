@@ -1,0 +1,33 @@
+{
+	"private": true,
+	"name": "site",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.7.2",
+		"@material-ui/icons": "^4.5.1",
+		"@mdi/js": "^4.7.95",
+		"@mdi/react": "^1.2.1",
+		"gatsby": "^2.18.11",
+		"gatsby-background-image": "^0.8.19",
+		"gatsby-image": "^2.2.36",
+		"gatsby-plugin-manifest": "^2.2.33",
+		"gatsby-plugin-material-ui": "^2.1.6",
+		"gatsby-plugin-offline": "^3.0.29",
+		"gatsby-plugin-sharp": "^2.3.7",
+		"gatsby-source-filesystem": "^2.1.42",
+		"gatsby-theme-bl-simple": "^1.0.7",
+		"gatsby-transformer-sharp": "^2.3.9",
+		"re-carousel": "^2.4.0",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0"
+	},
+	"devDependencies": {
+		"gatsby-plugin-layout": "^1.1.18"
+	}
+}
