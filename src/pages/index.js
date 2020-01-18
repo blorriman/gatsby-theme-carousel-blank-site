@@ -38,7 +38,8 @@ const useStyles = makeStyles(theme => ({
 		borderRadius: '50%',
 		padding: theme.spacing(1),
 		position: 'absolute',
-		bottom: 125,
+		top: '55vh',
+		// bottom: 125,
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
 		zIndex: 9999
@@ -46,6 +47,7 @@ const useStyles = makeStyles(theme => ({
 	mainDiv: {
 		minHeight: '35vh',
 		backgroundColor: theme.palette.primary.main,
+		marginTop: theme.spacing(-2.5),
 		paddingTop: theme.spacing(10),
 		paddingBottom: theme.spacing(5)
 	},
@@ -165,7 +167,7 @@ export const query = graphql`
 				}
 			}
 		}
-		one: file(name: { eq: "5" }) {
+		one: file(name: { eq: "10" }) {
 			childImageSharp {
 				fluid(quality: 90, maxWidth: 1920) {
 					...GatsbyImageSharpFluid_withWebp
