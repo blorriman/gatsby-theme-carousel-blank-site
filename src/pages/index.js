@@ -74,7 +74,12 @@ export default ({ data }) => {
 							className={classes.backgroundGrid}
 						>
 							<Grid item xs={12} sm={10}>
-								<Typography variant='h2' align='center' gutterBottom>
+								<Typography
+									variant='h2'
+									align='center'
+									style={{ color: 'white' }}
+									gutterBottom
+								>
 									Hello Gatsby
 								</Typography>
 							</Grid>
