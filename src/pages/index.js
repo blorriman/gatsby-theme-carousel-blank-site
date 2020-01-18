@@ -39,7 +39,6 @@ const useStyles = makeStyles(theme => ({
 		padding: theme.spacing(1),
 		position: 'absolute',
 		bottom: 125,
-		// top: '50%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
 		zIndex: 9999
@@ -47,7 +46,6 @@ const useStyles = makeStyles(theme => ({
 	mainDiv: {
 		minHeight: '35vh',
 		backgroundColor: theme.palette.primary.main,
-		// backgroundColor: cyan[500],
 		paddingTop: theme.spacing(10),
 		paddingBottom: theme.spacing(5)
 	},
@@ -59,7 +57,6 @@ const useStyles = makeStyles(theme => ({
 export default ({ data }) => {
 	const classes = useStyles()
 	const theme = MyTheme
-	// const imageData = data.file.childImageSharp.fluid
 	return (
 		<>
 			<div style={{ height: 500, marginTop: theme.spacing(-2) }}>
@@ -67,7 +64,7 @@ export default ({ data }) => {
 					<BackgroundImage
 						Tag='section'
 						className={classes.backgroundImage}
-						fluid={data.beach.childImageSharp.fluid}
+						fluid={data.six.childImageSharp.fluid}
 					>
 						<Grid
 							container
@@ -156,7 +153,7 @@ export default ({ data }) => {
 
 export const query = graphql`
 	query {
-		beach: file(name: { eq: "6" }) {
+		six: file(name: { eq: "6" }) {
 			childImageSharp {
 				fluid(quality: 90, maxWidth: 1920) {
 					...GatsbyImageSharpFluid_withWebp
