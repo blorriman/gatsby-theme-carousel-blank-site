@@ -18,11 +18,18 @@ import MyTheme from '../utils/myTheme'
 // const theme = MyTheme
 
 const useStyles = makeStyles(theme => ({
+	imageDiv: {
+		height: '65vh',
+		[theme.breakpoints.down('xs')]: {
+			height: '55vh'
+		},
+		marginTop: theme.spacing(-2)
+	},
 	backgroundImage: {
 		marginTop: theme.spacing(-2),
 		width: '100%',
-		height: '65vh',
-		minHeight: '65vh',
+		height: '100%',
+		// minHeight: '65vh',
 		// backgroundPosition: 'top left',
 		// backgroundPosition: 'bottom center',
 		backgroundRepeat: 'repeat-y',
@@ -35,17 +42,21 @@ const useStyles = makeStyles(theme => ({
 		backgroundColor: grey[400],
 		height: 250,
 		width: 250,
+		[theme.breakpoints.down('xs')]: {
+			height: 150,
+			width: 150,
+			top: '48vh'
+		},
 		borderRadius: '50%',
 		padding: theme.spacing(1),
 		position: 'absolute',
 		top: '55vh',
-		// bottom: 125,
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
 		zIndex: 9999
 	},
 	mainDiv: {
-		minHeight: '35vh',
+		height: '35vh',
 		backgroundColor: theme.palette.primary.main,
 		marginTop: theme.spacing(-2.5),
 		paddingTop: theme.spacing(10),
@@ -61,7 +72,7 @@ export default ({ data }) => {
 	const theme = MyTheme
 	return (
 		<>
-			<div style={{ height: 500, marginTop: theme.spacing(-2) }}>
+			<div className={classes.imageDiv}>
 				<Carousel loop auto duration={2000}>
 					<BackgroundImage
 						Tag='section'
