@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
 import Carousel from 're-carousel'
@@ -12,10 +12,9 @@ import {
 	makeStyles,
 	Typography
 } from '@material-ui/core'
-import { cyan, grey, indigo, lightBlue } from '@material-ui/core/colors'
+import { grey, indigo } from '@material-ui/core/colors'
 
 import MyTheme from '../utils/myTheme'
-// const theme = MyTheme
 
 const useStyles = makeStyles(theme => ({
 	imageDiv: {
@@ -29,9 +28,6 @@ const useStyles = makeStyles(theme => ({
 		marginTop: theme.spacing(-2),
 		width: '100%',
 		height: '100%',
-		// minHeight: '65vh',
-		// backgroundPosition: 'top left',
-		// backgroundPosition: 'bottom center',
 		backgroundRepeat: 'repeat-y',
 		backgroundSize: 'cover'
 	},
