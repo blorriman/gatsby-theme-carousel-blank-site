@@ -19,7 +19,10 @@ import MyTheme from '../utils/myTheme'
 const useStyles = makeStyles(theme => ({
 	imageDiv: {
 		height: '65vh',
-		[theme.breakpoints.down('xs')]: {
+		// [theme.breakpoints.down('xs')]: {
+		// 	height: '55vh'
+		// },
+		[theme.breakpoints.down('sm')]: {
 			height: '55vh'
 		},
 		marginTop: theme.spacing(-2)
@@ -32,13 +35,28 @@ const useStyles = makeStyles(theme => ({
 		backgroundSize: 'cover'
 	},
 	backgroundGrid: {
-		minHeight: '65vh'
+		// position: 'absolute',
+		top: '55vh',
+		minHeight: '65vh',
+		[theme.breakpoints.down('xs')]: {
+			minHeight: '65vh',
+			top: '55vh'
+		},
+		[theme.breakpoints.down('sm')]: {
+			minHeight: '35vh',
+			top: '17vh'
+		}
 	},
 	logo: {
 		backgroundColor: grey[400],
 		height: 250,
 		width: 250,
-		[theme.breakpoints.down('xs')]: {
+		// [theme.breakpoints.down('xs')]: {
+		// 	height: 150,
+		// 	width: 150,
+		// 	top: '48vh'
+		// },
+		[theme.breakpoints.down('sm')]: {
 			height: 150,
 			width: 150,
 			top: '48vh'
