@@ -35,7 +35,6 @@ const useStyles = makeStyles(theme => ({
 		backgroundSize: 'cover'
 	},
 	backgroundGrid: {
-		// position: 'absolute',
 		top: '55vh',
 		minHeight: '65vh',
 		[theme.breakpoints.down('xs')]: {
@@ -51,11 +50,6 @@ const useStyles = makeStyles(theme => ({
 		backgroundColor: grey[400],
 		height: 250,
 		width: 250,
-		// [theme.breakpoints.down('xs')]: {
-		// 	height: 150,
-		// 	width: 150,
-		// 	top: '48vh'
-		// },
 		[theme.breakpoints.down('sm')]: {
 			height: 150,
 			width: 150,
