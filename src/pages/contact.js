@@ -30,7 +30,8 @@ const useStyles = makeStyles(theme => ({
 	},
 	link: { textDecoration: 'none' },
 	button: {
-		margin: theme.spacing(1)
+		margin: theme.spacing(1),
+		color: 'white'
 	}
 }))
 
@@ -103,7 +104,7 @@ const Contact = ({ data }) => {
 		<>
 			<Grid container spacing={2} justify='center'>
 				<Grid item xs={12}>
-					<Typography variant='h4' align='center'>
+					<Typography variant='h4' align='center' color='textPrimary'>
 						Contact
 					</Typography>
 				</Grid>

@@ -13,11 +13,11 @@ const About = () => {
 	const classes = useStyles()
 	return (
 		<>
-			<Typography variant='h4' gutterBottom>
+			<Typography variant='h4' color='textPrimary' gutterBottom>
 				About Page
 			</Typography>
 
-			<Typography variant='body1' color='textPrimary' gutterBottom>
+			<Typography variant='body1' color='textSecondary' gutterBottom>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit
 				explicabo aspernatur ea! Sequi veniam, laudantium minus eaque repellat
 				deleniti saepe deserunt veritatis omnis impedit. Voluptas aperiam
